@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.io.Console;
+
+public class kdv {
+    public static void main(String[] args) {
+
+        double urun, kdvlitutar, kdv;
+        Scanner inpt=new Scanner(System.in);
+
+        System.out.println("URUN FİYATI: ")  ;
+        urun=inpt.nextDouble();
+
+        System.out.println("KDV: ");
+        kdv=(urun*18)/100;
+        System.out.println(kdv);
+
+        System.out.println("KDV DAHİL FİYAT: ");
+        kdvlitutar=kdv+urun;
+        System.out.println(kdvlitutar);
+    }
+
+}
